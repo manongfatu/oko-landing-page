@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+}
+.row {
+  display: flex;
+  height: 100vh;
+}
+.row > div {
+  position: relative;
+  width: 50%;
+}
+.col-1 {
+  background: url("../images/okoleftbg.jpg");
+  background-size: cover;
+  background-position: calc(50%) calc(50% - 100px);
+}
+.col-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 80%, #7c2b23 100%);
+  right: 0;
+}
+.col-2 {
+  background: #913326;
+}
+.site-title {
+  font-family: "DM Serif Display", serif;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1em;
+  margin: 10px 0;
+}
+.cover-title {
+  font-family: "DM Serif Display", serif;
+  position: absolute;
+  bottom: 40px;
+  z-index: 2;
+  padding: 0;
+  left: 40px;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+.col-2 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-title {
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.7em;
+  margin-top: 30px;
+}
+
+.divider {
+  width: 300px;
+  height: 3px;
+  background: white;
+  margin: 15px 0px;
+}
+
+.content p {
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.contact-label {
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 20px;
+}
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a.contact-number:hover {
+  background: #230d0d;
+}
+.contact-number {
+  background-color: #3f1717;
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  max-width: 390px;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 5px;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.contact-number img {
+  margin-right: 15px;
+}
+
+.text-last {
+  font-weight: 600;
+}
